@@ -1,0 +1,8 @@
+app_index:
+    path: /
+    controller: App\Controller\IndexController::index
+    methods:  [GET]
+app_news:
+    path: /news/{slug}/
+    controller: App\Controller\NewsController::index
+    methods:  [GET]

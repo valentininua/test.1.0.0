@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Welcome to news</h1>
+<ul>
+    {% for value in data %}
+        <li>
+            <a href="/news/{{ value.id }}">  {{ value.header|e }}  </a> </li>
+    {% endfor %}
+</ul>
+{% endblock %}
